@@ -79,7 +79,13 @@ As the java agent is included in the cartridge installation, you can configure y
 
 You will need to create a pre-action hook for your webapp to use our java agent:
 
-1. Under your application GitHub directly, navigate to .openshift/action_hooks
-2. Create a new file with name "pre_start_<webapp cartridge>". For example jbossas-7 would be "pre_start_jbossas-7", jbossews-1.0 (tomcat 6) would be "pre_start_jbossews-1.0"
-3. Edit the file, insert line `export _JAVA_OPTIONS="-javaagent:$OPENSHIFT_TRACEVIEW_DIR/tracelyticsagent.jar`
-4. Commit and push your changes to Git. The application should restart automatically with our java agent enabled
+Under your application GitHub directly, navigate to .openshift/action_hooks
+
+Create a new file with name "pre_start_<webapp cartridge>". For example jbossas-7 would be "pre_start_jbossas-7", jbossews-1.0 (tomcat 6) would be "pre_start_jbossews-1.0"
+
+Edit the file, insert line as below
+```
+export _JAVA_OPTIONS="-javaagent:$OPENSHIFT_TRACEVIEW_DIR/tracelyticsagent.jar
+```
+
+Commit and push your changes to Git. The application should restart automatically with our java agent enabled
