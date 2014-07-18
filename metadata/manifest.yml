@@ -2,7 +2,7 @@ Name: traceview
 Cartridge-Short-Name: TRACEVIEW
 Display-Name: Downloadable TraceView cartridge 0.x 
 Description: "A downloadable TraceView cartridge for Application Performance Monitoring."
-Version: '0.1.1'
+Version: '0.1.2'
 License: BSD
 Vendor: AppNeta
 Cartridge-Version: 0.1.2
