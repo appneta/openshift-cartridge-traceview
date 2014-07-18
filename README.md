@@ -78,6 +78,7 @@ will force the gem to search for a re-link to the TraceView libraries.
 As the java agent is included in the cartridge installation, you can configure your webapp server to start using the java agent to gather data. 
 
 You will need to create a pre-action hook for your webapp to use our java agent:
+
 1. Under your application GitHub directly, navigate to .openshift/action_hooks
 2. Create a new file with name "pre_start_<webapp cartridge>". For example jbossas-7 would be "pre_start_jbossas-7", jbossews-1.0 (tomcat 6) would be "pre_start_jbossews-1.0"
 3. Edit the file, insert line as below and save it
