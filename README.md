@@ -79,7 +79,7 @@ As the java agent is included in the cartridge installation, you can configure y
 
 You will need to create a pre-action hook for your webapp to use our java agent:
 
-Under your application GitHub directly, navigate to .openshift/action_hooks
+Under your application GitHub directory, navigate to .openshift/action_hooks
 
 Create a new file with name "pre_start_<webapp cartridge>". For example jbossas-7 would be "pre_start_jbossas-7", jbossews-1.0 (tomcat 6) would be "pre_start_jbossews-1.0"
 
