@@ -85,7 +85,7 @@ Create a new file with name "pre_start_<webapp cartridge>". For example jbossas-
 
 Edit the file, insert line as below
 ```
-export _JAVA_OPTIONS="-javaagent:$OPENSHIFT_TRACEVIEW_DIR/tracelyticsagent.jar
+export _JAVA_OPTIONS="-javaagent:$OPENSHIFT_TRACEVIEW_DIR/tracelyticsagent.jar"
 ```
 
 Commit and push your changes to Git. The application should restart automatically with our java agent enabled
