@@ -3,5 +3,9 @@ locked_files:
 - env/
 - usr/
 - var/
+- lib/
+- javaagent.json
+- tracelytics-api.jar
+- tracelyticsagent.jar
 processed_templates:
 - '**/*.erb'

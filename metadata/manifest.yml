@@ -2,10 +2,10 @@ Name: traceview
 Cartridge-Short-Name: TRACEVIEW
 Display-Name: Downloadable TraceView cartridge 0.x 
 Description: "A downloadable TraceView cartridge for Application Performance Monitoring."
-Version: '0.1.1'
+Version: '0.1.2'
 License: BSD
 Vendor: AppNeta
-Cartridge-Version: 0.1.1
+Cartridge-Version: 0.1.2
 Cartridge-Vendor: community
 Source-Url: https://github.com/appneta/openshift-cartridge-traceview.git
 Website: http://www.appneta.com/products/traceview
@@ -30,6 +30,9 @@ Endpoints:
   - Private-IP-Name: SCRIBE_IP
     Private-Port-Name: SCRIBE_PORT
     Private-Port: 48257
+  - Private-IP-Name: JAVA_DATAGRAM_IP
+    Private-Port-Name: JAVA_DATAGRAM_PORT
+    Private-Port: 15674
 Scaling:
   Min: 1
   Max: -1
